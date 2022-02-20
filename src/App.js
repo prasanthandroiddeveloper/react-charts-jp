@@ -37,24 +37,36 @@ function App() {
 
   return (
     <div>
-      <div className="App" style={{ display: "flex" }}>
-        <div style={{ width: 500 }}>
+      <div style={{ display: "flex" }}>
+        <div>
           <h1>Bar Chart</h1>
-          <BarChart options={options} chartData={data} />
+          <BarChart options={{
+            responsive: true,
+            maintainAspectRatio: false
+          }} chartData={data} />
         </div>
-        <div style={{ width: 500 }}>
+        <div>
           <h1>Line Chart</h1>
-          <LineChart options={options} chartData={data} />
+          <LineChart options={{
+            responsive: true,
+            maintainAspectRatio: false
+          }} chartData={data} />
         </div>
       </div>
       <div style={{ display: "flex" }}>
-        <div style={{ width: 500 }}>
+        <div >
           <h1>Pie Chart</h1>
-          <PieChart options={options} chartData={data} />
+          <PieChart options={{
+            responsive: true,
+            maintainAspectRatio: false
+          }} chartData={data} />
         </div>
-        <div style={{ width: 500 }}>
+        <div>
           <h1>Doughnut Chart</h1>
-          <DoughnutChart options={options} chartData={data} />
+          <DoughnutChart options={{
+            responsive: true,
+            maintainAspectRatio: false
+          }} chartData={data} />
         </div>
         {/* <div style={{ width: 500 }}>
         <MultiChart chartData={userData} />
