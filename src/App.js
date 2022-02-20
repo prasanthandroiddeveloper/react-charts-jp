@@ -8,24 +8,12 @@ import { UserData } from "./Data";
 import { options } from "./Options"
 import Axios from 'axios'
 
-// import MultiChart from "./components/MultiChart";
+
 
 function App() {
-  //const [UserData, setUserData] = useState([])
+
   useEffect(() => {
-    // Axios.get("https://gist.githubusercontent.com/prasanthandroiddeveloper/309551519379904bc9b1aed9e98145c6/raw/f0e6209c497462cb3342abda747b56a22fbf8773/UserData.json").
-    //   then((res => {
-
-
-    //     // JSON.parse setUserData()
-    //     var ress = (JSON.parse(JSON.stringify(res.data)))
-    //     console.log(JSON.parse(ress));
-
-
-
-    //   })).catch((error) => {
-    //     console.log(error)
-    //   })
+ 
   });
   var data = {
     labels: UserData.map((data) => data.year),
